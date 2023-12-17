@@ -1,0 +1,73 @@
+# copy
+alias c="cp"
+
+# edit
+alias e="vim"
+alias e3="e $HOME/.config/i3/config"
+alias ea="e $HOME/.aliases"
+alias eb="e $HOME/.bashrc"
+alias ef="e $HOME/.config/vifm/vifmrc"
+alias eq="e $HOME/.config/qutebrowser/config.py"
+alias ev="e $HOME/.vimrc"
+alias ez="e $HOME/.zshrc"
+
+# find
+alias f="find"
+alias fh="history | grep"
+
+# get
+alias gh="history"
+
+# list
+alias l="ls -la --color"
+alias ldows="l $HOME/Downloads"
+alias ldocs="l $HOME/Documents"
+
+# make
+alias md="mkdir"
+alias mdf="mkdir -p"
+alias mf="touch"
+
+# move
+alias m="mv"
+
+# npm
+alias npmi="npm install"
+alias npmid="npm install --save-dev"
+alias npms="npm start"
+
+# open
+alias o="open"
+alias ocofs="o $HOME/.config"
+alias odows="o $HOME/Downloads"
+alias otras="o $HOME/.local/share/Trash/files"
+
+# quit
+alias q="exit"
+
+# refresh
+alias rb=". $HOME/.bashrc"
+alias rn="nmcli radio wifi off && nmcli radio wifi on"
+alias rz=". $HOME/.zshrc"
+
+# test
+alias tn="ping google.com"
+
+# void
+alias v="clear"
+
+# walk
+alias wdocs="cd $HOME/Documents"
+alias wdows="cd $HOME/Downloads"
+alias wpics="cd $HOME/Pictures"
+alias wtmp="cd /tmp"
+alias wtras="cd $HOME/.local/share/Trash/files"
+
+# ubuntu specific
+if grep -q "Ubuntu" /etc/os-release; then
+    # update
+    alias PU="sudo apt update && sudo apt upgrade"
+    
+    # install
+    alias PI="sudo apt install"
+fi
