@@ -1,5 +1,5 @@
-# copy
-alias c="cp"
+# clear
+alias c="clear"
 
 # edit
 alias e="vim"
@@ -52,9 +52,6 @@ alias rz=". $HOME/.zshrc"
 
 # test
 alias tn="ping google.com"
-
-# void
-alias v="clear"
 
 # walk
 alias wdocs="cd $HOME/Documents"
